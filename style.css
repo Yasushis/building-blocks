@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--surface-color-100);
+    border-radius: 20px;
+}
+
+::selection {
+    background-color: var(--primary-color-100);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+
+    transition: 0.2s linear;
+}
+
+header {
+    top: 0;
+
+    background-color: var(--background-color);
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.theme-toggle input {
+    display: none;
+}
+.theme-toggle {
+    min-width: 80px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: var(--surface-color-100);
+
+    cursor: pointer;
+}
+.theme-toggle::before {
+    transition: transform 0.2s;
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color-100);
+}
+.theme-toggle:has(input:checked)::before {
+    transform: translateX(40px);
+}
+
+.content {
+    --gap: clamp(1rem, 6vw, 3rem);
+    --full: minmax(var(--gap), 1fr);
+    --content: min(50ch, 100% - var(--gap) * 2);
+    --popout: minmax(0, 2rem);
+    --feature: minmax(0, 5rem);
+
+    display: grid;
+    grid-template-columns: 
+        [full-start] var(--full)
+        [feature-start] var(--feature)
+        [popout-start] var(--popout)
+        [content-start] var(--content) [content-end]
+        var(--popout) [popout-end]
+        var(--feature) [feature-end]
+        var(--full) [full-end];
+
+    row-gap: 20px;
+}
+
+.content > *{
+    grid-column: content;
+}
+.popout {
+    grid-column: popout;
+}
+.feature {
+    grid-column: feature;
+}
+.full {
+    grid-column: full;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    min-width: fit-content;
+    border-radius: 10px;
+    background-color: var(--surface-color-100);
+}
+
+.title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

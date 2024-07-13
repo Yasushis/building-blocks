@@ -1,0 +1,19 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+/*Dark theme*/
+body {
+    --background-color: #121212;
+    --surface-color-100: #282828;
+    --primary-color-100: #382bf0;
+    --font-color: #fff;
+}
+
+/*Light theme*/
+body:has(input[name="theme-toggle"]:checked){
+    --background-color: #f3f0ff;
+    --surface-color-100: #dad1ff;
+    --primary-color-100: #B7A8FF;
+    --font-color: #141414;
+}
