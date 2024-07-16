@@ -1,19 +1,77 @@
 * {
     font-family: "Raleway", sans-serif;
 }
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
 
-/*Dark theme*/
+
 body {
     --background-color: #121212;
+
     --surface-color-100: #282828;
+    --surface-color-600: #3f3f3f;
+
     --primary-color-100: #382bf0;
+    --primary-color-100-highlighted: #5448f4;
+
+    --reverse-primary-color-100: #b4a4ff;
+
     --font-color: #fff;
 }
 
-/*Light theme*/
 body:has(input[name="theme-toggle"]:checked){
     --background-color: #f3f0ff;
-    --surface-color-100: #dad1ff;
-    --primary-color-100: #B7A8FF;
+
+    --surface-color-100: #e0cdff;
+    --surface-color-600: #e3e3e3;
+
+    --primary-color-100: #a08dff;
+    --primary-color-100-highlighted: #b2a3fd;
+
+    --reverse-primary-color-100: #2c00ff;   
+
     --font-color: #141414;
 }
+
+/* :root {
+    --dark-background-color: #121212;
+    --dark-surface-color-100: #282828;
+    --dark-primary-color-100: #382bf0;
+    --dark-font-color: #fff;
+
+    --light-background-color: #f3f0ff;
+    --light-surface-color-100: #dad1ff;
+    --light-primary-color-100: #b7a8ff;
+    --light-font-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --background-color: var(--dark-background-color);
+        --surface-color-100: var(--dark-surface-color-100);
+        --primary-color-100: var(--dark-primary-color-100);
+        --font-color: var(--dark-font-color);
+    }
+    body:has(input[name="theme-toggle"]:checked) {
+        --background-color: var(--light-background-color);
+        --surface-color-100: var(--light-surface-color-100);
+        --primary-color-100: var(--light-primary-color-100);
+        --font-color: var(--light-font-color);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        --background-color: var(--light-background-color);
+        --surface-color-100: var(--light-surface-color-100);
+        --primary-color-100: var(--light-primary-color-100);
+        --font-color: var(--light-font-color);
+    }
+    body:has(input[name="theme-toggle"]:checked) {
+        --background-color: var(--dark-background-color);
+        --surface-color-100: var(--dark-surface-color-100);
+        --primary-color-100: var(--dark-primary-color-100);
+        --font-color: var(--dark-font-color);
+    }
+} */

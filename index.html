@@ -13,45 +13,61 @@
 </head>
 <body>
     <header>
-        <h1>Building Blocks</h1>
-        <label for="theme-toggle" class="theme-toggle">
-            <input type="checkbox" name="theme-toggle" id="theme-toggle">
-        </label>
+        <div class="header-content">
+            <h1>Building Blocks</h1>
+            <label for="theme-toggle" class="theme-toggle">
+                <input type="checkbox" name="theme-toggle" id="theme-toggle">
+            </label>
+        </div>
+        <div class="scroll-watcher"></div>
     </header>
 
-    <section class="content">
-        <div class="wrapper full">
-            <h1 class="title">CSS</h1>
-        </div>
-
-        <div class="wrapper feature">
-            <h1 class="title">Scroll Animations</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas laboriosam animi maxime quasi accusamus optio illum reprehenderit nobis culpa ullam exercitationem dolores neque accusantium labore, ut nam iure quae.</p>
-        </div>
-        <div class="wrapper">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate facere maxime alias dolores aut ut! Soluta sed quibusdam sequi quas dicta eligendi, laudantium harum doloremque ipsam! Eveniet, velit! Quia?
-        </div>
-        <div class="wrapper popout">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate facere maxime alias dolores aut ut! Soluta sed quibusdam sequi quas dicta eligendi, laudantium harum doloremque ipsam! Eveniet, velit! Quia?
-        </div>
-        <div class="wrapper">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate facere maxime alias dolores aut ut! Soluta sed quibusdam sequi quas dicta eligendi, laudantium harum doloremque ipsam! Eveniet, velit! Quia?
-        </div>
-        
-        
-        <div class="wrapper feature">
-            <h1 class="title">Hover Animations</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas laboriosam animi maxime quasi accusamus optio illum reprehenderit nobis culpa ullam exercitationem dolores neque accusantium labore, ut nam iure quae.</p>
-        </div>
-        <div class="wrapper">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate facere maxime alias dolores aut ut! Soluta sed quibusdam sequi quas dicta eligendi, laudantium harum doloremque ipsam! Eveniet, velit! Quia?
-        </div>
-        <div class="wrapper popout">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate facere maxime alias dolores aut ut! Soluta sed quibusdam sequi quas dicta eligendi, laudantium harum doloremque ipsam! Eveniet, velit! Quia?
-        </div>
-        <div class="wrapper">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate facere maxime alias dolores aut ut! Soluta sed quibusdam sequi quas dicta eligendi, laudantium harum doloremque ipsam! Eveniet, velit! Quia?
-        </div>
+    <section>
+        <article>
+            <section class="content-grid">
+                <h2 class="breakout">Scroll Animations</h2>
+                <p>
+                    Por muito tempo, era necessário o uso de JavaScript para realizar animações com <strong>scroll</strong>. Felizmente,
+                    o <code>animation-timeline: scroll()</code> chegou e permite interações de scroll utilizando apenas CSS.
+                </p>
+                <div class="alert">
+                    <p>
+                        Alguns navegadores ainda não são compatíveis com essa funcionalidade. Confira a lista de navegadores compatíveis <a
+                            href="https://caniuse.com/mdn-css_properties_animation-timeline_scroll" target="_blank"
+                            rel="noreferrer noopener">aqui</a>.
+                    </p>
+                </div>
+                <p>
+                    Aqui, nesse site, repare que os conteúdos a seguir surgem conforme o usuário desce a página; além disso, há uma
+                    barra de progressão no cabeçalho, que apresenta o quanto da página está sendo visto.
+                </p>
+                <div class="alert">
+                    <p>
+                        Nesse site, a animação de surgimento de conteúdos é desativada se o usuário possui <code>prefers-reduced-motion</code> ativado em seu navegador.
+                    </p>
+                </div>
+            </section>
+        </article>
+        <article>
+            <section class="content-grid">
+                <h2 class="breakout">Hover Animations</h2>
+                <p>
+                    A propriedade <strong>hover</strong> é comumente usada para prover um feedback ao usuário. Ao passar o mouse por cima de um elemento, o usuário sabe
+                    que pode interagir com ele:
+                </p>
+                <table id="exemplos-hover" class="popout">
+                    <tr><td id="exemplos-hover__clareia">Clareia</td><td id="exemplos-hover__cor">Muda a cor</td></tr>
+                    <tr><td id="exemplos-hover__diminui">Diminui</td><td id="exemplos-hover__aumenta">Aumenta</td></tr>
+                </table>
+                <p>
+                    Você pode conferir mais efeitos com hover <a href="https://github.com/julioestrela/efeitos-hover" target="_blank" rel="noreferrer noopener">aqui</a>
+                </p>
+            </section>
+        </article>
     </section>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
