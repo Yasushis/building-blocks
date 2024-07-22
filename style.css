@@ -50,6 +50,10 @@ header {
     padding: 10px;
 }
 
+.header-help {
+    height: 99px;
+}
+
 .theme-toggle input {
     display: none;
 }
@@ -171,6 +175,21 @@ header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-size: 30px;
+}
+
+.title::after {
+    content: "";
+
+    height: 4px;
+    width: 600px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    background-color: var(--font-color);
 }
 
 footer {
@@ -220,6 +239,122 @@ code {
 }
 /*#endregion*/
 
+
+/*Exemplos Active*/
+.exemplos-active {
+
+    width: 600px;
+    height: 50px;
+
+    background-color: var(--primary-color-100);
+    border: none;
+    color: var(--font-color);
+
+    font-size: large;
+}
+
+.exemplos-active:active {
+    background-color: var(--reverse-primary-color-100);
+    color: var(--font-color);
+}
+
+
+/*Exemplos Focus*/
+.exemplos-focus {
+
+    width: 600px;
+    height: 50px;
+
+    font-size: 30px;
+    background-color: rgb(46, 43, 43);
+    border: none;
+}
+
+.exemplos-focus:focus {
+    outline: 3px solid var(--primary-color-100);
+    background-color: var(--reverse-primary-color-100);
+}
+
+.config-links-title {
+    text-decoration: none;
+    font-size: xx-large;
+    color: var(--font-color);
+    font-weight: bold;
+    transition: 0.5s;
+    
+}
+
+.config-links-title:hover {
+    color: var(--reverse-primary-color-100);
+    transition: 0.5s;
+}
+
+.config-links-tabs {
+    text-decoration: none;
+    font-size: large;
+    color: var(--font-color);
+    transition: 0.5s;
+}
+
+.config-links-tabs:hover {
+    color: var(--reverse-primary-color-100);
+    transition: 0.5s;
+}
+
 p {
     word-wrap: break-word;
+}
+
+.main-text {
+    position: absolute;
+
+    line-height: 37px;
+    text-align: justify;
+    margin: 20px;
+    
+}
+
+.main-div::before {
+    content: "";
+    position: absolute;
+    height: 400%;
+    width: 42%;
+    background-color: white;
+    transform: rotate(45deg);
+    animation: main-rotation 3.1s linear infinite;
+}
+
+.main-div {
+    position: relative;
+    background-color: var(--primary-color-100);
+    height: 250px;
+    width: 500px;
+
+    margin-top: 127px;
+    margin-bottom: 127px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.secondary-div {
+    position: absolute;
+    inset: 5px;
+    background-color: var(--background-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes main-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

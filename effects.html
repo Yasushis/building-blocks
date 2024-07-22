@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Blocks - Animações</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content header-help">
+            <a class="config-links-title" href="index.html">Building Blocks</a>
+            <a class="config-links-tabs" href="effects.html">EFFECTS</a>
+            <a class="config-links-tabs" href="animations.html">ANIMATIONS</a>
+            <a class="config-links-tabs" href="inheritance.html">INHERITANCE</a>            
+            <label for="theme-toggle" class="theme-toggle">
+                <input type="checkbox" name="theme-toggle" id="theme-toggle">
+            </label>
+        </div>
+        <div class="scroll-watcher"></div>
+    </header>
+
+    <section>
+        <article>
+            <section class="content-grid">
+
+                <h2 class="title">EFEITOS INTERATIVOS</h2>
+
+                <h2 class="breakout">Scroll Animation</h2>
+                <p>
+                    Por muito tempo, era necessário o uso de JavaScript para realizar animações com <strong>scroll</strong>. Felizmente,
+                    o <code>animation-timeline: scroll()</code> chegou e permite interações de scroll utilizando apenas CSS.
+                </p>
+                <div class="alert">
+                    <p>
+                        Alguns navegadores ainda não são compatíveis com essa funcionalidade. Confira a lista de navegadores compatíveis <a
+                            href="https://caniuse.com/mdn-css_properties_animation-timeline_scroll" target="_blank"
+                            rel="noreferrer noopener">aqui</a>.
+                    </p>
+                </div>
+                <p>
+                    Aqui, nesse site, repare que os conteúdos a seguir surgem conforme o usuário desce a página; além disso, há uma
+                    barra de progressão no cabeçalho, que apresenta o quanto da página está sendo visto.
+                </p>
+                <div class="alert">
+                    <p>
+                        Nesse site, a animação de surgimento de conteúdos é desativada se o usuário possui <code>prefers-reduced-motion</code> ativado em seu navegador.
+                    </p>
+                </div>
+            </section>
+        </article>
+        <article>
+            <section class="content-grid">
+                <h2 class="breakout">Hover Effect</h2>
+                <p>
+                    A propriedade <strong>hover</strong> é comumente usada para prover um feedback ao usuário. Ao passar o mouse por cima de um elemento, o usuário sabe
+                    que pode interagir com ele:
+                </p>
+                <table id="exemplos-hover" class="popout">
+                    <tr><td id="exemplos-hover__clareia">Clareia</td><td id="exemplos-hover__cor">Muda a cor</td></tr>
+                    <tr><td id="exemplos-hover__diminui">Diminui</td><td id="exemplos-hover__aumenta">Aumenta</td></tr>
+                </table>
+                <p>
+                    Você pode conferir mais efeitos com hover <a href="https://github.com/julioestrela/efeitos-hover" target="_blank" rel="noreferrer noopener">aqui</a>
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <section class="content-grid">
+
+                <h2 class="breakout">Active Effect</h2>
+
+                <p>
+                    A propriedade <strong>active</strong> geralmente é usada para fornecer um feedback ao usuário, para que ele saiba que clicou em um elemento do site.
+                </p>
+
+                <button class="exemplos-active">Clique e segure!</button>
+
+            </section>
+            
+        </article>
+
+        <article>
+            <section class="content-grid">
+
+                <h2 class="breakout">Focus Effect</h2>
+
+                <p>
+                    A propriedade <strong>focus</strong> é utilizada para destacar o elemento "ativo" do site. Ou seja, para o usuário <strong>focar</strong> no elemento em que está interagindo.
+                </p>
+
+            <form action="">
+                <input type="text" name="subtext-one" class="exemplos-focus" placeholder="Digite aqui..." maxlength="15">
+            </form>
+                
+            </section>
+        </article>
+
+    </section>
+
+    <br>
+
+    <footer>
+
+        <article>
+            <section class="content-grid">
+
+                <p>Site criado por:</p>
+
+                <ul>
+                    <li>Júlio Antunes Estrela</li>
+                    <li>Vinícius Miura do Espírito Santo</li>
+                    <li>Joel Kagohara Sasaki</li>
+                </ul>
+            </section>
+        </article>
+
+    </footer>
+
+</body>
+</html>

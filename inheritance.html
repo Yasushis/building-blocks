@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Blocks - Herança</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content header-help">
+            <a class="config-links-title" href="index.html">Building Blocks</a>
+            <a class="config-links-tabs" href="effects.html">EFFECTS</a>
+            <a class="config-links-tabs" href="animations.html">ANIMATIONS</a>
+            <a class="config-links-tabs" href="inheritance.html">INHERITANCE</a>            
+            <label for="theme-toggle" class="theme-toggle">
+                <input type="checkbox" name="theme-toggle" id="theme-toggle">
+            </label>
+        </div>
+        <div class="scroll-watcher"></div>
+    </header>
+
+    <article>
+
+        <section class="content-grid">
+
+            <h1 class="title">HERANÇA E ESPECIFICIDADE</h1>
+
+            <h2 class="breakout">Herança</h2>
+            <p>A herança em CSS permite que certos estilos sejam passados de um elemento pai para seus filhos. <br><br> Nem todas as propriedades CSS podem ser herdadas, mas algumas das mais comuns que são herdadas incluem:</p>
+            <ul><li>color</li><li>font-family</li><li>font-size</li></ul>
+            <p>Por exemplo, se você definir a cor do texto de um elemento body como vermelho, todos os elementos dentro do body herdarão essa cor, a menos que sejam sobrescritos por outra regra de maior especificidade.</p>
+            
+            <h2 class="breakout">Especificidade</h2>
+            <p>A especificidade determina qual regra CSS será aplicada quando múltiplas regras se aplicam ao mesmo elemento.</p>
+            <p>Segue a ordem crescente de especificidade:</p>
+            <ul><li>Seletores universais</li><li>Tipo de seletores</li><li>Classes seletoras</li><li>Atributos seletores</li><li>Pseudo-classes</li><li>Seletores ID</li><li>Estilo inline</li></ul>
+
+        </section>
+
+    </article>
+
+    <footer>
+
+        <article>
+            <section class="content-grid">
+
+                <p>Site criado por:</p>
+
+                <ul>
+                    <li>Júlio Antunes Estrela</li>
+                    <li>Vinícius Miura do Espírito Santo</li>
+                    <li>Joel Kagohara Sasaki</li>
+                </ul>
+            </section>
+        </article>
+
+    </footer>
+    
+</body>
+</html>
